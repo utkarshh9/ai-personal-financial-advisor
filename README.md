@@ -8,3 +8,10 @@ An AI-powered financial advisor that analyzes user transactions, predicts budget
 - Financial Health Score
 - Investment Recommendation Engine
 - Streamlit Dashboard
+
+### Dataset
+This project uses a real-world personal finance transactions dataset sourced from Kaggle.
+Dataset Name: Personal Finance Data
+Source: Kaggle
+Link: https://www.kaggle.com/datasets/ramyapintchy/personal-finance-data
+The dataset contains transaction-level financial data including date, transaction description, category, amount, and transaction type (income/expense), which is used for expense categorization, budget prediction, financial health scoring, and investment recommendation
