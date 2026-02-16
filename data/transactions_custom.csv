@@ -1,0 +1,90 @@
+Date,Transaction Description,Category,Amount,Type
+2024-01-01,Salary credited to bank account,Salary,60000,Income
+2024-01-02,Monthly house rent payment,Rent,15000,Expense
+2024-01-03,Swiggy food order dinner,Food & Drink,450,Expense
+2024-01-04,Uber ride to office,Travel,320,Expense
+2024-01-05,Amazon online shopping purchase,Shopping,2500,Expense
+2024-01-06,Electricity bill payment online,Utilities,1800,Expense
+2024-01-07,Grocery store purchase vegetables,Food & Drink,2200,Expense
+2024-01-08,Netflix monthly subscription,Entertainment,799,Expense
+2024-01-09,Mutual fund SIP investment,Investment,5000,Expense
+2024-01-10,Medical pharmacy bill payment,Health & Fitness,950,Expense
+2024-01-11,Petrol fuel payment at pump,Travel,1800,Expense
+2024-01-12,Restaurant dinner with friends,Food & Drink,1200,Expense
+2024-01-13,Online course fee payment,Education,3000,Expense
+2024-01-14,Internet broadband bill,Utilities,999,Expense
+2024-01-15,Salary bonus credited,Salary,12000,Income
+2024-01-16,Shopping mall clothing purchase,Shopping,3500,Expense
+2024-01-17,Cinema movie ticket booking,Entertainment,600,Expense
+2024-01-18,Doctor consultation hospital visit,Health & Fitness,1200,Expense
+2024-01-19,Stock market investment purchase,Investment,7000,Expense
+2024-01-20,Flight ticket booking travel,Travel,8500,Expense
+2024-01-21,Dominos pizza food order,Food & Drink,700,Expense
+2024-01-22,Apartment rent transfer,Rent,15000,Expense
+2024-01-23,Supermarket grocery shopping,Food & Drink,2100,Expense
+2024-01-24,Electricity utility bill payment,Utilities,1750,Expense
+2024-01-25,Monthly gym membership fee,Health & Fitness,2000,Expense
+2024-01-26,Flipkart online shopping order,Shopping,4200,Expense
+2024-01-27,Bus travel ticket booking,Travel,150,Expense
+2024-01-28,Spotify music subscription,Entertainment,199,Expense
+2024-01-29,Salary credited company payroll,Salary,58000,Income
+2024-01-30,Investment in index mutual fund,Investment,6000,Expense
+2024-02-01,Restaurant lunch payment,Food & Drink,900,Expense
+2024-02-02,Uber cab ride airport,Travel,600,Expense
+2024-02-03,Online amazon electronics purchase,Shopping,8000,Expense
+2024-02-04,Electricity bill auto debit,Utilities,1900,Expense
+2024-02-05,House rent bank transfer,Rent,15000,Expense
+2024-02-06,Medical checkup hospital bill,Health & Fitness,2500,Expense
+2024-02-07,Swiggy food delivery order,Food & Drink,550,Expense
+2024-02-08,Salary credited monthly income,Salary,60000,Income
+2024-02-09,Stock investment purchase shares,Investment,10000,Expense
+2024-02-10,Movie theatre ticket booking,Entertainment,750,Expense
+2024-02-11,Grocery vegetables supermarket,Food & Drink,1800,Expense
+2024-02-12,Internet wifi bill payment,Utilities,1100,Expense
+2024-02-13,Clothing shopping mall purchase,Shopping,5000,Expense
+2024-02-14,Petrol fuel station payment,Travel,1700,Expense
+2024-02-15,Doctor medicine pharmacy bill,Health & Fitness,800,Expense
+2024-02-16,Salary credited performance bonus,Salary,15000,Income
+2024-02-17,Restaurant dinner bill payment,Food & Drink,1400,Expense
+2024-02-18,Mutual fund SIP monthly investment,Investment,5000,Expense
+2024-02-19,Electricity utility bill online,Utilities,1600,Expense
+2024-02-20,Netflix entertainment subscription,Entertainment,799,Expense
+2024-02-21,Apartment house rent payment,Rent,15000,Expense
+2024-02-22,Amazon shopping order electronics,Shopping,9000,Expense
+2024-02-23,Flight travel ticket booking,Travel,12000,Expense
+2024-02-24,Supermarket grocery food purchase,Food & Drink,2300,Expense
+2024-02-25,Gym fitness membership fee,Health & Fitness,1800,Expense
+2024-02-26,Salary credited company salary,Salary,62000,Income
+2024-02-27,Stock market long term investment,Investment,8000,Expense
+2024-02-28,Cinema entertainment movie ticket,Entertainment,650,Expense
+2024-03-01,Electricity bill payment utility,Utilities,2000,Expense
+2024-03-02,Restaurant food dinner payment,Food & Drink,1600,Expense
+2024-03-03,Uber cab ride office commute,Travel,350,Expense
+2024-03-04,Shopping online fashion purchase,Shopping,4200,Expense
+2024-03-05,Monthly rent house transfer,Rent,15000,Expense
+2024-03-06,Hospital medical bill payment,Health & Fitness,3000,Expense
+2024-03-07,Salary credited monthly salary,Salary,60000,Income
+2024-03-08,Mutual fund investment SIP plan,Investment,5500,Expense
+2024-03-09,Spotify entertainment subscription,Entertainment,199,Expense
+2024-03-10,Groceries supermarket purchase,Food & Drink,2100,Expense
+2024-03-11,Online course subscription fee,Education,2500,Expense
+2024-03-12,Udemy course purchase,Education,1800,Expense
+2024-03-13,School tuition fee payment,Education,5000,Expense
+2024-03-14,Equity stock investment purchase,Investment,9000,Expense
+2024-03-15,Mutual fund long term investment,Investment,7500,Expense
+2024-03-16,Doctor health checkup hospital,Health & Fitness,2200,Expense
+2024-03-17,Gym annual membership payment,Health & Fitness,6000,Expense
+2024-03-18,Movie streaming entertainment subscription,Entertainment,499,Expense
+2024-03-19,Concert ticket entertainment booking,Entertainment,3200,Expense
+2024-03-20,Monthly apartment rent payment,Rent,15000,Expense
+2024-03-21,House rent bank transfer,Rent,15000,Expense
+2024-03-22,Electricity utility bill payment,Utilities,2100,Expense
+2024-03-23,Water utility bill payment,Utilities,900,Expense
+2024-03-24,Flight travel ticket booking,Travel,11000,Expense
+2024-03-25,Train travel ticket reservation,Travel,1800,Expense
+2024-03-26,Online shopping electronics purchase,Shopping,8500,Expense
+2024-03-27,Clothing shopping mall purchase,Shopping,4200,Expense
+2024-03-28,Restaurant food dinner payment,Food & Drink,1600,Expense
+2024-03-29,Cafe food and drinks order,Food & Drink,750,Expense
+2024-03-30,Monthly salary credited,Salary,62000,Income
+2024-03-31,Company bonus salary credit,Salary,20000,Income
