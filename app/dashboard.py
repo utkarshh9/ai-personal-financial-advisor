@@ -26,7 +26,7 @@ from investment_advisor import recommend_investment
 
 # Page Configuration
 st.set_page_config(
-    page_title="AI Personal Financial Advisor",
+    page_title="MoneyMeow",
     page_icon="💰",
     layout="wide"
 )
@@ -104,10 +104,10 @@ st.markdown(
 
 st.markdown(
     """
-    <h1 style='margin-bottom:0px;'>AI Personal Financial Advisor</h1>
-    <p style='margin-top:0px; font-size:18px; color:gray;'>
+    <h1 style='margin-bottom:0px;'>MoneyMeow</br>AI Personal Financial Advisor</h1>
+    <h2 style='margin-top:0px; font-size:18px; color:gray;'>
     Smart Budgeting, Forecasting & Investment Intelligence Dashboard
-    </p>
+    </h2>
     """,
     unsafe_allow_html=True
 )
