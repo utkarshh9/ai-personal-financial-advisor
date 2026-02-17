@@ -1,5 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import joblib
+import os
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
@@ -48,6 +51,19 @@ def train_forecasting_model(monthly_data):
     # Train model
     model = LinearRegression()
     model.fit(X, y)
+
+    # Save forecasting model
+    joblib.dump(model, "models/expense_forecasting_model.pkl")
+    print("Forecasting model saved to models/expense_forecasting_model.pkl")
+
+    # Evaluate model
+    y_pred = model.predict(X)
+    mae = mean_absolute_error(y, y_pred)
+    rmse = np.sqrt(mean_squared_error(y, y_pred))
+
+    print("\nModel Evaluation Metrics:")
+    print(f"MAE (Mean Absolute Error): {mae:.2f}")
+    print(f"RMSE (Root Mean Squared Error): {rmse:.2f}")
 
     return model, X, y, monthly_data
 

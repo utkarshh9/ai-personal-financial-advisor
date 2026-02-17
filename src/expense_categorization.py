@@ -1,4 +1,5 @@
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -49,6 +50,9 @@ def train_model(X, y):
 
     # Predictions
     y_pred = model.predict(X_test)
+
+    joblib.dump(model, "models/expense_classifier.pkl")
+    joblib.dump(vectorizer, "models/text_vectorizer.pkl")
 
     return model, vectorizer, X_test, y_test, y_pred
 

@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import joblib
+import os
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
@@ -43,8 +45,11 @@ def apply_kmeans_clustering(data, n_clusters=3):
     kmeans = KMeans(n_clusters=n_clusters, random_state=42)
     data['Cluster'] = kmeans.fit_predict(X_scaled)
 
-    return data, kmeans, scaler
+    # Save trained KMeans model
+    joblib.dump(kmeans, "models/kmeans_spending_model.pkl")
+    print("KMeans model saved to models/kmeans_spending_model.pkl")
 
+    return data, kmeans, scaler
 
 def interpret_clusters(data):
     """
@@ -108,7 +113,6 @@ def main():
 
     # Visualize results
     visualize_clusters(final_data)
-
 
 if __name__ == "__main__":
     main()

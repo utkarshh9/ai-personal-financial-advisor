@@ -1,8 +1,21 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
+import joblib
 import os
 import sys
+
+# --- MODEL LOADER ---
+@st.cache_resource
+def load_model(model_path):
+    """
+    Load saved ML model if available.
+    Falls back gracefully if model file is missing.
+    """
+    if os.path.exists(model_path):
+        return joblib.load(model_path)
+    return None
+
 
 # Add src folder to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
@@ -212,6 +225,8 @@ if section == "Overview":
 elif section == "Spending Analysis":
     st.header("Spending Clustering Analysis")
 
+    clustering_model = load_model("models/kmeans_spending_model.pkl")
+
     # Aggregate spending by category
     category_spending = df.groupby("Category")["Amount"].sum().reset_index()
 
@@ -232,17 +247,24 @@ elif section == "Spending Analysis":
 
     st.plotly_chart(fig, width='stretch')
 
+    if clustering_model:
+        st.success("Loaded pre-trained clustering model")
+    else:
+        st.info("Clustering running without saved model (fallback mode)")
+
+
 # BUDGET FORECAST
 elif section == "Budget Forecast":
     st.header("Monthly Expense Forecast")
 
+    # Load saved forecasting model (if available)
+    forecast_model = load_model("models/expense_forecasting_model.pkl")
+
     # Convert Date column to datetime
     df['Date'] = pd.to_datetime(df['Date'])
 
-    # Filter only expenses
     expense_df = df[df['Type'].str.lower() == 'expense']
 
-    # Monthly aggregation
     monthly_expense = (
         expense_df
         .set_index('Date')
@@ -250,6 +272,9 @@ elif section == "Budget Forecast":
         .sum()
         .reset_index()
     )
+
+    # Create time index (same as training)
+    monthly_expense['TimeIndex'] = range(len(monthly_expense))
 
     fig = px.line(
         monthly_expense,
@@ -260,12 +285,22 @@ elif section == "Budget Forecast":
     )
 
     fig.update_layout(
+        template="plotly_dark",
+        plot_bgcolor="#0E1117",
+        paper_bgcolor="#0E1117",
+        font=dict(color="#FAFAFA"),
         xaxis_title="Month",
-        yaxis_title="Total Expense",
-        template="plotly_dark"
+        yaxis_title="Total Expense"
     )
 
     st.plotly_chart(fig, width='stretch')
+
+    # Show model status
+    if forecast_model:
+        st.success("Loaded pre-trained forecasting model (production mode)")
+    else:
+        st.info("Using dynamic computation (model file not found)")
+
 
 
 # FINANCIAL HEALTH
