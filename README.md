@@ -1,4 +1,5 @@
 # MoneyMeow - AI Personal Financial Advisor
+🔗 **Live Application:** https://moneymeow.streamlit.app
 
 ### Smart Budgeting, Expense Analysis & Investment Suggestions using Machine Learning
 
